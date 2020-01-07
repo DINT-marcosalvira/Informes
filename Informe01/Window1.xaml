@@ -5,8 +5,8 @@
         Title="Informes" Height="600" Width="800" >
     <Grid>
         <Grid>
-            <TabControl>
-                <TabItem>
+            <TabControl SelectionChanged="TabControl_SelectionChanged">
+                <TabItem x:Name="TabItemInforme1">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Stretch="Fill" Source="personas.ico" Height="25" />
@@ -15,7 +15,7 @@
                     </TabItem.Header>
                     <cr:CrystalReportsViewer Name="reportViewer"/>
                 </TabItem>
-                <TabItem>
+                <TabItem x:Name="TabItemInforme2">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Stretch="Fill" Source="mundo.ico" Height="25" />
@@ -24,7 +24,7 @@
                     </TabItem.Header>
                     <cr:CrystalReportsViewer Name="reportViewer2"/>
                 </TabItem>
-                <TabItem >
+                <TabItem x:Name="TabItemInforme3">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Stretch="Fill" Source="euro.ico" Height="25" />
@@ -33,7 +33,7 @@
                     </TabItem.Header>
                     <cr:CrystalReportsViewer Name="reportViewer3"/>
                 </TabItem>
-                <TabItem>
+                <TabItem  x:Name="TabItemInforme4">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
                             <Image Stretch="Fill" Source="person.ico" Height="25" />
@@ -42,8 +42,8 @@
                     </TabItem.Header>
                     <cr:CrystalReportsViewer Name="reportViewer4" Margin="0,-6,0,6"/>
                 </TabItem>
-                <TabItem>
-                    <TabItem.Header>
+                <TabItem x:Name="TabItemInforme5">
+                    <TabItem.Header >
                         <StackPanel Orientation="Horizontal">
                             <Image Stretch="Fill" Source="grafico.ico" Height="25" />
                             <TextBlock FontWeight="Bold" FontSize="15" VerticalAlignment="Center">Informe 5</TextBlock>
